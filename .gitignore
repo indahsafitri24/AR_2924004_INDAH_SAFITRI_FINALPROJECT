@@ -1,27 +1,30 @@
-cat > .gitignore <<'EOF'
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
-[Mm]emoryCaptures/
-[Rr]ecordings/
-.vs/
-.gradle/
-ExportedObj/
+# Unity temporary folders
+.utmp/
+Library/
+Temp/
+Obj/
+build/
+Build/
+Builds/
+Logs/
+UserSettings/
+
+# Generated Visual Studio files
 *.csproj
 *.sln
+*.slnx
+*.suo
 *.user
 *.userprefs
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
-*.opendb
-*.VC.db
+
+# Android build
+*.apk
+*.aab
+
+# IDE
+.vs/
+.idea/
+
+# System
 .DS_Store
 Thumbs.db
-EOF

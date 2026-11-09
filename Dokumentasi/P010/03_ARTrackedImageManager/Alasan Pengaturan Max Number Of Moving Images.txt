@@ -1,0 +1,4 @@
+Alasan Pengaturan Max Number Of Moving Images
+Kolom Max Number Of Moving Images diatur ke nilai 1 karena skenario praktikum ini menggunakan satu gambar bergerak yang perlu dilacak dalam satu waktu. Pengaturan tersebut berkaitan dengan batas jumlah gambar bergerak yang dapat diproses secara bersamaan oleh sistem tracking, bukan jumlah keseluruhan gambar yang terdaftar di dalam Reference Image Library.
+Pada project ini terdapat dua gambar yang terdaftar di dalam Reference Image Library, yaitu Marker 1 (Unicorn Fantasi) dan Marker 2 (Kastil Fantasi). Namun, Marker 2 (Kastil Fantasi) ditetapkan sebagai marker utama untuk pengujian. Oleh karena itu, nilai 1 digunakan sebagai batas sesuai kebutuhan skenario pengujian gambar bergerak yang direncanakan.
+Pengaturan ini juga mempertimbangkan kemampuan perangkat Android agar konfigurasi tracking tetap sesuai dengan kebutuhan aplikasi dan tidak menggunakan batas yang lebih tinggi tanpa alasan yang diperlukan.
