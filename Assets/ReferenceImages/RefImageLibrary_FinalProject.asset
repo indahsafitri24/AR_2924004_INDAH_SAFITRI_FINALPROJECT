@@ -23,17 +23,7 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 7621497737389433821
       m_GuidHigh: 16371605442906681273
-    m_Size: {x: 0.1, y: 0.1}
+    m_Size: {x: 0.15, y: 0.15}
     m_SpecifySize: 1
-    m_Name: Marker_KastilFantasi
-    m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 4644986245994918579
-      m_GuidHigh: 13417417914428205719
-    m_SerializedTextureGuid:
-      m_GuidLow: 1203741331646705265
-      m_GuidHigh: 809317132613369817
-    m_Size: {x: 0.1, y: 0.1}
-    m_SpecifySize: 1
-    m_Name: Marker_Unicorn
+    m_Name: Marker_Kastil
     m_Texture: {fileID: 0}
