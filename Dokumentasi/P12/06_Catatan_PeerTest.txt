@@ -1,0 +1,40 @@
+CATATAN PEER TEST - PERTEMUAN 12
+Augmented Reality: Interaksi Objek AR, UI, Audio, dan Animasi
+
+Nama Mahasiswa  : INDAH SYAFITRI
+NIM             : 2924013
+Nama Penguji    : ILHAM
+Tanggal Uji     : 24 November 2026
+Perangkat       : REDAME 15
+Model AR        : Sports Car (Mobil Sport)
+
+FORM VALIDASI
+
+No  Yang Diuji                              Hasil                          Catatan
+1   Marker mudah dipahami / ditemukan       [✔] Lulus  [ ] Perlu perbaikan  Penguji langsung tahu harus memindai marker dan model muncul.
+2   Rotate Left/Right mudah digunakan       [✔] Lulus  [ ] Perlu perbaikan  Model berputar sesuai label tombol tanpa instruksi.
+3   Scale Up/Down mudah digunakan           [✔] Lulus  [ ] Perlu perbaikan  Ukuran berubah proporsional, tidak hilang atau terlalu besar.
+4   Judul/deskripsi mudah dibaca            [✔] Lulus  [ ] Perlu perbaikan  Teks ringkas, jelas, dan tidak menutupi marker.
+5   Feedback audio/animasi terasa jelas     [✔] Lulus  [ ] Perlu perbaikan  Suara klik terdengar setiap tombol berhasil ditekan.
+
+MASALAH YANG DITEMUKAN
+Pada pengujian awal, tombol Scale Down tidak merespons dan model tidak
+berputar saat tombol Rotate ditekan. Penyebabnya, rotasi pada objek root
+tertimpa oleh proses tracking AR, dan batas skala pada script bersifat
+absolut sehingga tidak sesuai dengan ukuran awal model.
+
+PERBAIKAN YANG DILAKUKAN
+1. Script ARObjectController dimodifikasi: rotasi diterapkan pada child
+   model (bukan root prefab) agar tidak tertimpa tracking.
+2. Batas skala diubah menjadi relatif terhadap ukuran awal model
+   (Min 0.2x dan Max 3x).
+3. OnClick keempat tombol diperiksa ulang agar terhubung ke method
+   yang benar, lalu aplikasi di-build ulang dan diuji kembali.
+
+HASIL SETELAH PERBAIKAN
+Keempat tombol (Rotate Left, Rotate Right, Scale Up, Scale Down)
+berfungsi dengan baik pada perangkat Android.
+
+KESIMPULAN
+Minimal dua jenis interaksi (rotate dan scale) dapat digunakan oleh
+pengguna lain tanpa instruksi panjang.

@@ -28,3 +28,13 @@ UserSettings/
 # System
 .DS_Store
 Thumbs.db
+/.utmp/
+/build/
+/Library/
+/Logs/
+/UserSettings/
+*.apk
+*.csproj
+*.sln
+*.vsconfig.user
+desktop.ini
