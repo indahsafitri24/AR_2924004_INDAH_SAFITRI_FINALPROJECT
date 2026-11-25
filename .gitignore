@@ -38,3 +38,4 @@ Thumbs.db
 *.sln
 *.vsconfig.user
 desktop.ini
+!Dokumentasi/**/*.apk
